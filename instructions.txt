@@ -1,0 +1,8 @@
+To build:
+docker build -t seltest .
+
+To run on port: 
+docker run -p 9000:8080 seltest
+
+To invoke lambda: 
+curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d {}
